@@ -6,7 +6,8 @@ if __name__ == "__main__":
     if len(argv) <= 3:
         print("{} <a> <operator> <b>".format(argv[0]))
         exit(1)
-    elif argv[2] != '+' and argv[2] != '-' and argv[2] != '*' and argv[2] != '/':
+
+    if argv[2] != '+' and argv[2] != '-' and argv[2] != '*' and argv[2] != '/':
         print("Unkown operator. Available operators: +, -, * and /")
 
     a = int(argv[1])
