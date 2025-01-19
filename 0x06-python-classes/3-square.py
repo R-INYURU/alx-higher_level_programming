@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Square Class init size and def square area """
+
 
 class Square:
     def __init__(self, size=0):

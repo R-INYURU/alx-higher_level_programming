@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+""" class Square defining square
+ - init square size
+ - def square size setter
+ - def square area calc
+ - def square print parameter
+"""
+
 
 class Square:
     def __init__(self, size=0):

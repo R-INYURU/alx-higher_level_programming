@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Square Class raising error if size if -ve or not a num """
+
 
 class Square:
     def __init__(self, size=0):

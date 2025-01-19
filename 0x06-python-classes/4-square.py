@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+""" class Square defining a square:
+ - init square size
+ - def square area calc
+ - handle error
+"""
+
 
 class Square:
     def __init__(self, size=0):
