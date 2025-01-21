@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+""" New class geometry module """
+
+
+class BaseGeometry:
+    """ Empty class """
+    pass
