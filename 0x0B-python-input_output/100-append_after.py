@@ -9,13 +9,11 @@ def append_after(filename="", search_string="", new_string=""):
         search_string: string to search for
         new_string: string to append
     """
-
-    res_line = []
-    with open(filename, 'r', encoding="utf-8") as f:
-        for line in f:
-            res_line += [line]
-            if line.find(seach_string) != -1:
-                res_line += [new_string]
-
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write("".join(res_line))
+    text = ""
+    with open(filename) as r:
+        for line in r:
+            text += line
+            if search_string in line:
+                text += new_string
+    with open(filename, "w") as w:
+        w.write(text)
